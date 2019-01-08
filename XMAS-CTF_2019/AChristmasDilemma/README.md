@@ -15,14 +15,17 @@ The highest number returned from the server was interpreted as a very rough appr
 
 Let's say for a simple example that the server requests the global maximum in range 5-10.
 The results of the rough approximation is seen below.
+```
 f(5)=1
 f(6)=6
 f(7)=7
 f(8)=11
 f(9)=2
 f(10)=3
+```
 This result suggests that the global maximum is around x=8.
 The next step is to do a finer grain approximation requesting the server for the value the 20 points around x=8 below
+```
 f(7.1)
 f(7.2)
 f(7.3)
@@ -31,6 +34,7 @@ f(8)
 ...
 f(8.8)
 f(8.9)
+```
 This procedure is repeated with finer and finer grain approxmation until the total number of queries reach the maximum limit of 500 (Guery 501 is used to perform the final quess)
 The X which resulted in the overall highest y value is passed to the server as a guess on the global maximum and the flag below is given
 ![alt text](ChristmasDilemma_flag.png "Flag")
