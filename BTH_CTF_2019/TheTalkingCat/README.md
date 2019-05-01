@@ -7,8 +7,8 @@ When connecting to the remote challenge the player is faced with this:
 ![alt text](TheTalkingCat_challenge.png "Challenge")
 This display of an unmimited amount "random" numbers does not seem to make any sense and the remote server does not seem to respond to any user input.
 
-##Solution
-###Step 1 - Recover the data
+## Solution
+### Step 1 - Recover the data
 The first step of this challenge is therefore to make sense of the data by first writing it to a file using:
 `nc <address> <port> > test`
 Since the output from the server is unlimited this command is stopped after a couple of seconds to see what the output looks like. Reading the file using:
@@ -22,7 +22,7 @@ By opening the file in a texteditor the reason can be seen, the output is filled
 
 ![alt text](TheTalkingCat_readfile.png "Description")
 
-###Step 2 - Clean the output
+### Step 2 - Clean the output
 The output file is cleaned from all non-digits using Regex and Zed.
 
 `cat test | sed 's/[^0-9]*//g' > output`
