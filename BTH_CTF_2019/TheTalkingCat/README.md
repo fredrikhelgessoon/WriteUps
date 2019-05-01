@@ -17,12 +17,17 @@ Does not seem to work since the only output is:
 ```
 Welcome, prepare yourself!
 ```
+
 By opening the file in a texteditor the reason can be seen, the output is filled with scrap data obstructing the file read of "cat".
+
 ![alt text](TheTalkingCat_readfile.png "Description")
+
 ###Step 2 - Clean the output
 The output file is cleaned from all non-digits using Regex and Zed.
+
 `cat test | sed 's/[^0-9]*//g' > output`
 The contents of the file "output" are seen below:
+
 ```
 102541026110257102411025410301102571027910257102691024110243102471025010269102651025310241102691024910261102771024710265102511025010269102651025010270
 1025410261102571024110254103011
