@@ -3,8 +3,10 @@ I'm the creator of this challenge and this is my solution to it.
 
 ## Description
 ![alt text](TheTalkingCat.png "Description")
+
 When connecting to the remote challenge the player is faced with this:
 ![alt text](TheTalkingCat_challenge.png "Challenge")
+
 This display of an unmimited amount "random" numbers does not seem to make any sense and the remote server does not seem to respond to any user input.
 
 ## Solution
