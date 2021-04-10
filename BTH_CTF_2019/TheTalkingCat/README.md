@@ -37,7 +37,7 @@ The contents of the file "output" are seen below:
 ```
 
 ### Step 3 - Decoding
-The output is repetetive which suggests that a message is repeated by the server. The output looks decoded (also suggested by the hint in the description) but the method is currently unknown.
+The output is repetetive which suggests that a message is repeated by the server. The output looks encoded (also suggested by the hint in the description) but the method is currently unknown.
 At this point the best way to go forward is either trying to guess which encoding is used, or take a good look at the description for clues.
 The sentence "Find the flag and unite the code" suggests that the string is encoded using "unicode". The string can be decoded using the Decimal to unicode converter on:
 https://www.branah.com/unicode-converter
